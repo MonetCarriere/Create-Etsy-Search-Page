@@ -1,0 +1,297 @@
+html {
+    box-sizing:border:box;
+    font-family:sans-serif;
+    font-family:"Graphik Webfont",apple-system,BlinkMacSystemFont,"Roboto Sans","Segoe UI","Helvetica",Arial, sans-serif;
+}
+*, *::before, *::after {box-sizing:inherit;}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Search Bar*/
+.search_box{
+    float:left;
+    width:350px;
+    height:70px;
+}
+.search_box input {
+    margin-top:10px;
+    background-color: #ddd;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+    font-size: 1em;
+    padding-left: 15px;
+ 
+}
+
+.search_box i {
+    position: relative;
+    right: 30px;
+    font-size: 1.5em;
+}
+
+
+/*Sell on etsy/Register/Sign-In/Cart*/
+.right-side-info{
+    float:right;
+    width:375px;
+    height:70px;
+}
+.right-side-info ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.right-side-info li {
+    padding: 10px;
+}
+
+.left-side-info {
+    float: left;
+    height:70px;
+}
+
+/*Header*/
+
+header {
+    height: 100px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(35,35,35);
+    font-size: 14px;
+}
+
+/*Main*/
+#main-nav{
+    width:100%;
+    float:left;
+    border-bottom: 2px solid rgb(222,222,222);
+}
+#main-nav ul {
+    display: flex;
+    list-style: none;
+    padding:0;
+    justify-content: space-between;
+
+}
+
+.seller {
+    font-size: 12px;
+}
+
+section, main {
+    display: flex;
+    flex-direction: row
+}
+
+
+.item_image .heart {
+    background-image: url(assets/heart.png);
+    background-size: contain;
+    visibility: hidden;
+    width: 15px;
+    height: 15px;
+    float: right;
+    margin-right:3px;
+    margin-top:3px;
+}
+
+.item_image:hover .heart{
+    visibility: visible;
+}
+
+/*Aside Bar*/
+
+aside {
+    /*width: 300px;*/
+    min-height: 500px;
+    font-size: 12px;
+
+}
+
+aside ul li  {
+    width: 300px;
+    text-decoration: none;
+    display: flex;      /*Doing this should have had an effect on the header but it didnt*/
+    text-align: center;
+}
+
+aside li {
+    padding: 5px;
+}
+
+.low-highBox {
+    display:flex;
+}
+
+.lowbox {
+    border-color:rgb(222,222,222);
+}
+
+.squares {
+    list-style-type: square;
+}
+
+main {
+    flex-wrap: wrap;
+}
+
+main img {
+    width: 200px;
+}
+
+
+main p {
+    font-size: 12px;
+    width: 200px;
+    overflow: hidden;
+    white-space: no-wrap;
+    text-overflow: ellipsis;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item {
+    padding: 5px;
+    border-radius:5px;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.item .title{
+    font-size: 14px;
+    overflow:hidden;
+    height:1.5vw;
+}
+.item .seller{
+    color:#999;
+}
+.item .item_image{
+    width:100%;
+    height:15vw;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+/*Footer*/
+
+footer {
+    background: rgb(48,70,106);
+    color: white;
+    text-decoration: none;
+    min-height: 300px;
+    width:100%;
+}
+
+.footer-options {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.footer-options a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-options li{
+    padding: 10px;
+}
+
+.footer-options ul {
+    list-style: none;
+    padding: 10px;
+}
+
+/*Button*/
+.button {
+    background-color: rgb(49,71,105);
+    border: 2px solid white;
+    color: #DCDCDC;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  
+  .button:hover {
+    background-color: #f1f1f1;
+  }
+
+
+  /*Social Media*/
+.social_media i{
+    margin-right:5px;
+}
+
+
+.footer-bottom {
+    background: rgb(35, 36, 70);
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+
+
+.bottom-left-content img{
+        border-radius: 50%;
+      
+}
+
+
+.bottom-right-content ul li {
+    display: inline;
+    list-style: none;
+    padding:0;
+    text-decoration: none;
+}
+
+.squares > form > div{
+    margin-left:44px;
+}
+
+
+/* RESPONSIVENESS */
+/* LG */
+@media screen and (min-width: 1200px){
+   #items .item{
+       width:24%;
+   }
+}
+
+/* MD */
+@media screen and (max-width: 1200px){
+    #items .item{
+        width:24%;
+    }
+}
+
+/* SM */
+@media screen and (max-width: 992px){
+    #items .item{
+        width:30%;
+    }
+}
+
+/* XS */
+@media screen and (max-width: 760px){
+    
+}
